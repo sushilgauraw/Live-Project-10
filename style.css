@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./image/retro-living-room-interior-design.jpg);
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    background-size: 100% 114%;
+    background-position: bottom;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Navbar  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2em;
+}
+
+.logo {
+    margin: 14px;
+    font-size: 20px;
+}
+
+.nav-element {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 2em;
+    width: 70%;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 5em;
+}
+
+.list-item {
+    list-style-type: none;
+    /* margin: auto 27px; */
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.call-us {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+}
+
+.call-icon {
+    width: 15%;
+    filter: invert(1);
+    position: relative;
+    margin: 0px 2px;
+    padding: 0px 5px;
+    top: -10px;
+}
+
+.phone-number {
+    font-weight: 600;
+}
+
+.menu {
+    filter: invert(1);
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+/* Hero section  */
+.hero {
+    padding: 2em;
+}
+
+.hero-title {
+    font-size: 4em;
+    /* font-size: clamp(2rem, 1rem + 10vw, 4rem); */
+    margin-left: 1.5em;
+}
+
+.hero-btn {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    font-size: 1.6em;
+    padding: 12px 20px;
+    border-radius: 30px;
+    margin-left: 3.6em;
+    margin-top: 2em;
+}
+
+.hero-btn:hover {
+    border: 2px solid transparent;
+    background-color: #0f3954;
+    transition: all 200ms ease-in-out;
+}
+
+.top-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+
+.top-card {
+    background-color: rgba(255, 255, 255, 0.228);
+    align-self: flex-start;
+    padding: 1em 2em;
+    width: fit-content;
+}
+
+.top-card>img {
+    width: 80px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 2em;
+    padding: 8px 8px;
+    margin-bottom: 10px;
+}
+
+.top-card>h3 {
+    font-size: medium;
+}
+
+.line-2 {
+    height: 5rem;
+    width: 1px;
+    background-color: #FFFFFF;
+}
+
+.circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+.bottom-div {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    position: absolute;
+    right: 25%;
+    top: 65%;
+}
+
+.bottom-card {
+    background-color: rgba(255, 255, 255, 0.228);
+    align-self: flex-end;
+    padding: 1em 2em;
+    width: fit-content;
+}
+
+.bottom-card>img {
+    width: 80px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 2em;
+    margin-bottom: 4px;
+}
+
+.bottom-card>h3 {
+    font-size: medium;
+}
+
+.line-1 {
+    height: 1px;
+    width: 5rem;
+    background-color: #FFFFFF;
+}
+
+/* Media Query for tablet devices  */
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
+        background-size: 160vw 166vh;
+        background-position: center;
+        height: 100%;
+    }
+
+    .nav {
+        padding: 1em;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .nav-element {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        margin-top: 16px;
+    }
+
+    .hero-title {
+        font-size: 2.4em;
+        margin-left: 0;
+    }
+
+    .hero-btn {
+        font-size: 1em;
+        margin-left: 0;
+        margin-top: 3em;
+    }
+
+    .top-div {
+        right: 5%;
+        top: 28%;
+    }
+
+    .top-card>h3 {
+        font-size: larger;
+    }
+
+    .bottom-div {
+        position: absolute;
+        right: 20%;
+        top: 60%;
+    }
+
+    .bottom-card>h3 {
+        font-size: larger;
+    }
+}
+
+/* Media Query for mobile devices  */
+@media (max-width: 425px) {
+    body {
+        background-size: 86vh 100vh;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .logo {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .nav {
+        padding: 8em;
+    }
+
+    .nav-element {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    .hero {
+        padding: 0;
+    }
+
+    .hero-title {
+        font-size: 3em;
+        margin-left: 0.5em;
+    }
+
+    .title-break {
+        display: none;
+    }
+
+    .hero-btn {
+        font-size: 12px;
+        margin-left: 2.6em
+    }
+
+    .top-div {
+        top: 44%;
+    }
+
+    .top-card {
+        padding: 1em;
+    }
+
+    .line-2 {
+        height: 3rem;
+    }
+
+    .line-1 {
+        width: 3rem;
+    }
+
+    .bottom-div {
+        position: absolute;
+        right: 12%;
+        top: 72%;
+    }
+
+    .bottom-card {
+        padding: 1em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        margin: 0;
+        background-size: 100vw 160vh;
+        background-position: center;
+        height: 100%;
+    }
+
+    .logo {
+        font-size: 14px;
+    }
+
+    .nav-element {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+}
